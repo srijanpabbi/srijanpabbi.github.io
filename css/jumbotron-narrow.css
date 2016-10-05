@@ -24,6 +24,13 @@ body {
   padding-bottom: 19px;
 }
 
+
+.newline{
+	padding-top: 10px;
+	color: #777;
+	border-top: 1px solid #e5e5e5;
+}
+
 /* Custom page footer */
 .footer {
   padding-top: 19px;
