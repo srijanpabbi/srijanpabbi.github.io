@@ -17,7 +17,8 @@ description: Personal webpage of Shashank Srikant
 <div class="row vertical-center about-desc">
 	<div class="col-sm-12">
 	  <h4>Automatic grading of computer programs</h4>
-	  <h5>Work done with Varun Aggarwal and Gursimran Singh. Published at: KDD 2014 <a href="http://dl.acm.org/citation.cfm?id=2623377">[link]</a> and KDD 2016 <a href="http://dl.acm.org/citation.cfm?id=2939696">[link]</a></h5>
+	  <h5>Work done with Varun Aggarwal and Gursimran Singh. Published at: KDD 2014 <a href="http://dl.acm.org/citation.cfm?id=2623377">[link]</a>, KDD 2016 <a href="http://dl.acm.org/citation.cfm?id=2939696">[link]</a></h5>
+	  <h5><a href="http://research.aspiringminds.com/question-independent-grading-kdd/">[Blog post]</a><a href="">[IEEE spectrum coverage]</a></h5>
 		   <p style="text-align:justify;">
 		   Extant program assessment systems score mostly based on the number of test-cases passed, providing no insight into the competency of the programmer. In addition to grading a program on its programming practices and complexity, the key kernel of the system we designed is a machine-learning based algorithm which determines closeness of the logic of the given program to a correct program. This algorithm uses a set of highly-informative features, derived from the abstract representations of a given program, that capture the program's functionality. These features are then used to learn a model to grade the programs, which are built against evaluations done by experts.
 		   </p>
@@ -35,15 +36,18 @@ description: Personal webpage of Shashank Srikant
 	</div>
 </div>
 
-
 <div class="newline"></div>
 
 <div class="row vertical-center about-desc">
 	<div class="col-sm-12">
-	  <h4>Question independent grading using machine learning: The case of computer program grading</h4>
+	  <h4>Analyzing test case statistics</h4>
+	  <h5>Work done with Varun Aggarwal. Used internally in the group as a tool</h5>
+	  <h5><a href="http://research.aspiringminds.com/test-case-analytics/">[Blog post]</a></h5>
 		   <p style="text-align:justify;">
-		   Learning supervised models to grade open-ended responses is an expensive process. A model has to be trained for every prompt/question separately, which in turn requires graded samples. In automatic programming evaluation specically, the focus of this work, this issue is amplified. The models have to be trained not only for every question but also for every language the question is offered in. Moreover, the availability and time taken by experts to create a labeled set of programs for each question is a major bottleneck in scaling such a system. We address this issue by presenting a method to grade computer programs which requires no labeled samples for grading responses to a new, unseen question. We extend our previous work wherein we introduced a grammar of features to learn question specific models. In this work, we propose a method to transform those features into a set of features that maintain their structural relation with the labels across questions. Using these features we learn one supervised model across questions, which can then be applied to an ungraded response to an unseen question. We show that our method rivals the performance of both, question specific models and the consensus among human experts while substantially outperforming extant ways of evaluating codes. The learning from this work is transferable to other grading tasks such as math question grading and also provides a new variation to the supervised learning approach.
+		   Test cases evaluate whether a computer program is doing what it’s supposed to do. There are various ways to generate them – automatically based on specifications, say by ensuring code coverage [1] or by subject matter experts (SMEs) who think through conditions based on the problem specification. We asked ourselves whether there was something we could learn by looking at how student programs responded to test cases. Could this help us design better test cases or find flaws in them? By looking at such responses from a data-driven perspective, we wanted to know whether we could .a. design better test cases .b. understand whether there existed any clusters in the way responses on test cases were obtained and .c.  whether we could discover salient concepts needed to solve a particular programming problem, which would then inform us of the right pedagogical interventions. We built a cool tool which helped us look at statistics on over 2500 test cases spread across over fifty programming problems attempted by nearly 18,000 students and job-seekers in a span of four weeks!
 		   </p>
-		   <p><strong>Publications:</strong> KDD 2016, Plenary session presentation.</p> 
-	</div>
+	</div>	   
+</div>
+<div class="row vertical-center about-desc">
+	
 </div>
