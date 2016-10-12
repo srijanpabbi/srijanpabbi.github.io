@@ -1,2 +1,6 @@
 permalink: /notes/:year/:month/:day/:title
 markdown: kramdown
+gems:
+  - jekyll-seo-tag
+title: Shashank Srikant webpage
+description: Shashank Srikant webpage. Machine learning, program analysis, education, society
