@@ -26,11 +26,10 @@ description: Research | Shashank Srikant
 	  <a href="http://spectrum.ieee.org/at-work/education/moocs-teach-ai-to-grade-computer-programs-as-a-human-would" target="_blank">[Report on IEEE spectrum]</a>
 	  </h5>
 		   <p style="text-align:justify;">
-		   Extant program assessment systems score mostly based on the number of test-cases passed, providing no insight into the competency of the programmer. In addition to grading a program on its programming practices and complexity, the key kernel of the system we designed is a machine-learning based algorithm which determines closeness of the logic of the given program to a correct program. This algorithm uses a set of highly-informative features, derived from the abstract representations of a given program, that capture the program's functionality. These features are then used to learn a model to grade the programs, which are built against evaluations done by experts.
+		   We designed <i>Automata</i>, a tool to holistically grade computer programs. A critical component was to determine whether a program was semantically `close’ to a correct answer. This was traditionally done either by evaluating test-suites or by solving constraint equations using SAT solvers. The former is an error-prone metric while the latter infeasible for real-time systems. We designed a grammar for generating features from the abstract syntax trees of programs. They captured data and control dependencies between variables, which we showed to provide significant additional information. Supervised models learnt on these features had a correlation of ~0.9 with expert raters, rivaling inter-rater correlations. 
 		   </p>
 		   <p style="text-align:justify;">
-		   Having solved this problem, we found ourselves training models for every programming question we designed, which was a time/human expensive effort. This impedes scaling such a system to new content. We address this issue by presenting a method to grade computer programs which requires no labeled samples for grading responses to a new, unseen question. We extend our previous work wherein we introduced a grammar of features to learn question specific models. In this work, we propose a method to transform those features into a set of features that maintain their structural relation with the labels across questions. Using these features we learn one supervised model across questions, which can then be applied to an ungraded response to an unseen question.
-		   </p>
+		   A particular bottleneck in our KDD ‘14 work was in building predictive models for every programming question we designed. It is a time consuming and human-intensive effort. Extending our work, we conceived a way to transform program features from each question onto a question-independent space. This question-independent space quantified a program’s correctness without the help of labeled data. Such a metric allowed us to compare programs attempting different questions on the same scale. We showed that supervised models learnt on these transformed features were able to predict as well as those learnt on question-specific features </p>
 	</div>	   
 </div>
 <div class="row vertical-center about-desc">
@@ -174,19 +173,29 @@ description: Research | Shashank Srikant
 	  <h5><a href="/img/undergrad_reports/btp1.pdf" target="_blank">[Report] </a>
 	  &nbsp;&nbsp;
 	  <a href="/img/undergrad_reports/btp1_slides.pdf" target="_blank">[Slides] </a></h5>
-	  
+	  We participated in <b><a href="http://score-contest.org/2011/">SCORE 2011</a></b>, a student olympiad organized at ICSE, a top-tier conference in software engineering (see <a href="http://portal.core.edu.au/conf-ranks/1209/">CORE ranking</a>). The problem statement we picked  required us to design a smart transportation system. The idea was to demonstrate sound software engineering principles in tackling such a fairly complicated problem. We particularly solved the problem of making personalized predictive models for users traveling a network. Some highlights -
+	  <ul>
+		<li>Learn user-specific models and store thresholds against each user <li>
+		<li>Learn thresholds to determine if a path is a frequently-travered path by a user<li>
+		<li>Scan each learnt paths against paths reported to have downtimes</li>
+		<li>Use Floyd-Warshal to recompute alternate paths and suggest to user</li>
+	  </ul>
+	  The system design allowed us to scale predictions in real-time to the user-base. We validated the entire setup on synthetic datasets we generated.
 	</div>
 </div>
 
+<a name="ug_summer"></a>
 <div class="newline"></div>
-
 <div class="row vertical-center about-desc">
 	<div class="col-sm-12">
 	  <h4>Parallelization of weighted sequence comparison using EBWT</h4>
 	  <h5>Work done with Binay Pandey and Dr. Rajdeep Niyogi.</h5>
 	  <h5><a href="/img/undergrad_reports/roorkee.pdf" target="_blank">[Report]</a></h5>
-	  [[Project details]]
+	  We were exploring whether we could improve the performance of a then new compression algorithm. By the end of my term, I was unable to come up with a neat parallelized algorithm which would give me a 200X gain. I had to settle for a 5X speed up of core functionality and a 2X speed-up of overall performance as compared to the performance on a high-end CPU.
 	</div>
 </div>
-
+<div class="row vertical-center about-desc">
+	<div class="col-sm-5"><p align="center"><img src='/img/undergrad_reports/ebwt_flow.png' width = '400' /></p> </div>
+	<div class="col-sm-5"><p align="center"><img src='/img/undergrad_reports/ebwt_2.png' width = '400' /></p> </div>
+</div>
 <div class="newline"></div>
