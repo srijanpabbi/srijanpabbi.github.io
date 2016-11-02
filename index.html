@@ -23,8 +23,8 @@ description: Personal webpage of Shashank Srikant | Machine Learning, Program An
 	</div>
 	<div class="col-sm-9 paper">
 		<ul>
-			{% for post in site.posts %}
-			{{post.content}}
+			{% for update in site.updates %}
+			{{ update.content }}
 			{% endfor %}
 			<li> Our work on data science for kids is accepted at SIGCSE '17! <a href="/research#dskids" target="_blank">[details]</a>
 			<div class="newline"></div>
