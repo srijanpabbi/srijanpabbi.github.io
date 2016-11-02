@@ -23,13 +23,13 @@ description: Personal webpage of Shashank Srikant | Machine Learning, Program An
 	</div>
 	<div class="col-sm-9 paper">
 		<ul>
-			{% for update in site.updates reversed limit:3 %}
+			{% for update in site.updates reversed limit:5 %}
 			<li>
-			{{ update.content }}
+			<b>{{ update.date | date_to_string }}</b>: {{ update.content }}
 			<div class="newline"></div>
 			</li>
 			{% endfor %}
-		All updates <a href="/updates" target="_blank">...</a>
+		<a href="/updates" target="_blank">[All updates]</a>
 		</ul>
 	</div>
 </div>

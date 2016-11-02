@@ -1,7 +1,7 @@
 <div class="notelist">
     {% for update in site.updates %}
     <ul class="listnotes list-unstyled">
-      <li><span>{{ update.date | date_to_string }} &raquo;</span> {{ update.content }}</li>
+      <li><span><b>{{ update.date | date_to_string }}</b> &raquo;</span> {{ update.content }}</li>
     </ul>
     {% endfor %}
 </div>
