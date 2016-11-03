@@ -25,7 +25,7 @@ description: Personal webpage of Shashank Srikant | Machine Learning, Program An
 		<ul>
 			{% for update in site.updates reversed limit:5 %}
 			<li>
-			<b>{{ update.date | date:"%-m/%-d" }}</b>: {{ update.content }}
+			<b>{{ update.date }}</b>: {{ update.content }}
 			<div class="newline"></div>
 			</li>
 			{% endfor %}
