@@ -24,7 +24,7 @@ description: Personal webpage of Shashank Srikant | Machine Learning, Program An
 	<div class="col-sm-9 paper">
 		<ul>
 			{% assign sorted = (site.updates | sort: 'date') | reverse %}
-			{% for update in sorted %}
+			{% for update in sorted limit:5 %}
 			<li>
 			<b>{{ update.date | date:"%-m/%-d" }}</b>: {{ update.content }}
 			<div class="newline"></div>
