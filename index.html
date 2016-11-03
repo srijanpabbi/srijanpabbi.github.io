@@ -23,7 +23,7 @@ description: Personal webpage of Shashank Srikant | Machine Learning, Program An
 	</div>
 	<div class="col-sm-9 paper">
 		<ul>
-			{% for update in site.updates reversed limit:9 %}
+			{% for update in site.updates limit:9 reversed %}
 			<li>
 			<b>{{ update.date | date:"%-m/%-d" }}</b>: {{ update.content }}
 			<div class="newline"></div>
