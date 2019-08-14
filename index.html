@@ -26,7 +26,7 @@ description: Personal webpage of Shashank Srikant | Machine Learning, Program An
 			{% assign sorted = (site.updates | sort: 'date') | reverse %}
 			{% for update in sorted limit:5 %}
 			<li>
-			<b>{{ update.date | date:"%-m/%-yyyy" }}</b>: {{ update.content }}
+			<b>{{ update.date | date:"%-m/%-Y" }}</b>: {{ update.content }}
 			<div class="newline"></div>
 			</li>
 			{% endfor %}
