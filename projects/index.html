@@ -48,7 +48,9 @@ description: Projects | Srijan Pabbi
 	  </h5>
 		   <p style="text-align:justify;">
 		   Talkative Tom is an embedded device that records audio when the user speaks, stores the recorded audio data, and replays it with a modified pitch or a garbled alien voice. It employs an Atmel-Atmega328P/MSP430G2955(Faster Version) micro-controller for all the audio and digital processing jobs. On the board there are tuned analog circuits which perform the task of amplifying the audio signal to desirable levels with minimal noise.
-The audio data output by the preamplifier is sampled with an ADC and is buffered. The buffers are in ping-pong configuration, which means that the data from one buffer is dumped into a SPI based Flash storage in while the samples are fed into the other. After the user stops speaking the data is retrieved from the SPI flash and keeping the data pipeline same, it is output at a different sample rate to modify the pitch or it is broken pereodically to create a garbled voice. The data bytes are superimposed on a Pulse Width Modulation(PWM) with low pass filter to recreate the analog audio and is given to a power amplifier for output.
+		</p>
+		<p style="text-align:justify;">
+			   The audio data output by the preamplifier is sampled with an ADC and is buffered. The buffers are in ping-pong configuration, which means that the data from one buffer is dumped into a SPI based Flash storage in while the samples are fed into the other. After the user stops speaking the data is retrieved from the SPI flash and keeping the data pipeline same, it is output at a different sample rate to modify the pitch or it is broken pereodically to create a garbled voice. The data bytes are superimposed on a Pulse Width Modulation(PWM) with low pass filter to recreate the analog audio and is given to a power amplifier for output.
 		</p>
 		<!--ul style="text-align: left;">
 			<li>Record</li>
