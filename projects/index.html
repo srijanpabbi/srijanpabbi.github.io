@@ -102,6 +102,12 @@ description: Projects | Srijan Pabbi
 		   <p style="text-align:justify;">
 		   At the time of alarm, a buzzer sounds, and keeps buzzing until the user enters the correct answers one or several randomly generated mathematical problems increasing in difficulty for every wrong answer, as per the setting. Once the user answers the question, the interface unlocks, the device setting and alarm time can be changed. There is no way around it; even if the user removes the power, the alarm clock stores its's state in the battery powered RTC RAM, and prompts the user to solve the question, hence making it impossible to shut off the alarm in any way but the correct answer to the math question.
 		</p>
+		<p style="text-align:justify;">
+		The concept for this was tested on a C based microcontroller, and the actual coding for the 8085 microprocessor was done in assembly on the intel's 8085 instruction set. LFSR(Linear Feedback Shift Register) algorithm was used to generate random numbers, and the assembly code including the LCD driving, RTC IO, and general management functionality amounted to more than 1300 instructions.
+		</p>
+		<p style="text-align:justify;">
+		Checkout GitHub for the complete assembly code if you have the paitence :)
+		</p>
 	</div>	   
 </div>
 
