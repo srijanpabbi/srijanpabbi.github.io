@@ -10,9 +10,9 @@ blockquote p { font-size: 16px; line-height: 1.6em; }
 
 /* Masthead */
 /* .header, .footer, .header h3 { font-family: 'Montserrat', Helvetica, sans-serif; text-transform: uppercase; font-weight: normal; } */
-.header { font-family: 'Ubuntu', Helvetica, sans-serif; text-transform: uppercase; font-weight: normal; font-size: 18px}
+.header { font-family: 'Ubuntu', Helvetica, sans-serif; text-transform: uppercase; font-weight: normal; font-size: 17.5px}
 .footer { font-family: 'Ubuntu', Helvetica, sans-serif; text-transform: uppercase; font-weight: normal; }
-.header h3 { font-family: 'Ubuntu', Helvetica, sans-serif; text-transform: uppercase; font-weight: 350; }
+.header h3 { font-family: 'Ubuntu', Helvetica, sans-serif; text-transform: uppercase; font-weight: 360; }
 
 /* Navigation */
 h3.text-muted a {text-decoration: none; color: #999999; }
