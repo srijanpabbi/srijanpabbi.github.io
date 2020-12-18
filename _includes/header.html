@@ -1,11 +1,21 @@
 <div class="header">
-	<ul class="nav nav-pills pull-right">
-		<li class="{{ page.projects }}"><a href="/projects" title="Projects">Projects</a></li>
-		<!--li class="{{ page.blog }}"><a href="/blog" title="Notes">Blog</a></li-->
-		<li class="{{ page.contact }}"><a href="/contact" title="Contact">Contact</a></li>
-	</ul>
-	<div>
-		<img src="/img/logoSP.jpg" style="float: left;padding: 8px 0px 0px 0px;height: 30px">
-		<h3 class="text-muted" style="top: 0px; padding: 0px 0px 0px 30px"><a href="/"> Srijan Pabbi</a></h3>
-	</div>
+	<nav class="navbar navbar-expand-sm">
+		<!--ul class="nav nav-pills pull-right"-->
+		<button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarMenu">
+			<ul class="navbar-nav ml_auto">
+				<li class="nav-item {{ page.projects }}"><a href="/projects" class="nav-link" title="Projects">Projects</a></li>
+				<!--li class="{{ page.blog }}"><a href="/blog" title="Notes">Blog</a></li-->
+				<li class="nav-item {{ page.contact }}"><a href="/contact" class="nav-link" title="Contact">Contact</a></li>
+			</ul>
+		</div>
+		
+		<div class="navbar-brand">
+			<img src="/img/logoSP.jpg" style="float: left;padding: 8px 0px 0px 0px;height: 30px">
+			<h3 class="text-muted" style="top: 0px; padding: 0px 0px 0px 30px"><a href="/"> Srijan Pabbi</a></h3>
+		</div>
+	</nav>
 </div> <!-- /header -->
+
